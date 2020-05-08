@@ -1,0 +1,14 @@
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\bin\Debug\SharpVendas.exe.config
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\bin\Debug\SharpVendas.exe
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\bin\Debug\SharpVendas.pdb
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.csprojAssemblyReference.cache
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.Properties.Resources.resources
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.csproj.GenerateResource.cache
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.csproj.CoreCompileInputs.cache
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.exe
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.pdb
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.frmPrincipal.resources
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.frmNovaVenda.resources
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\bin\Debug\models-controllers\SharpVendas.mdf
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\bin\Debug\models-controllers\SharpVendas_log.ldf
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.Form1.resources
