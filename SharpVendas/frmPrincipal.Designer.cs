@@ -68,7 +68,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImage = global::SharpVendas.Properties.Resources._2comercio_e_compras;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.Location = new System.Drawing.Point(77, 69);
             this.button1.Name = "button1";
@@ -80,7 +80,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Yellow;
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImage = global::SharpVendas.Properties.Resources.CCCA;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button4.Location = new System.Drawing.Point(444, 69);
             this.button4.Name = "button4";
@@ -91,7 +91,7 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Yellow;
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImage = global::SharpVendas.Properties.Resources.funciona;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button5.Location = new System.Drawing.Point(803, 69);
             this.button5.Name = "button5";
@@ -102,7 +102,7 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Yellow;
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.BackgroundImage = global::SharpVendas.Properties.Resources.RELAT;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button6.Location = new System.Drawing.Point(803, 362);
@@ -114,7 +114,7 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.Yellow;
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImage = global::SharpVendas.Properties.Resources.CONTVENDA;
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button7.Location = new System.Drawing.Point(444, 362);
             this.button7.Name = "button7";
@@ -125,7 +125,7 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.Yellow;
-            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.BackgroundImage = global::SharpVendas.Properties.Resources.estoque;
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button8.Location = new System.Drawing.Point(77, 362);
             this.button8.Name = "button8";

@@ -61,11 +61,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frmLoad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmLoad.Designer.cs">
+      <DependentUpon>frmLoad.cs</DependentUpon>
     </Compile>
     <Compile Include="models-controllers\DAOcliente.cs" />
     <Compile Include="models-controllers\Venda.cs" />
@@ -88,8 +88,8 @@
     <Compile Include="models-controllers\Vendedor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmLoad.resx">
+      <DependentUpon>frmLoad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNovaVenda.resx">
       <DependentUpon>frmNovaVenda.cs</DependentUpon>
@@ -140,6 +140,14 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>SharpVendas.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\unnamed.jpg" />
+    <None Include="Resources\RELAT.png" />
+    <None Include="Resources\introFINAL.jpg" />
+    <None Include="Resources\funciona.png" />
+    <None Include="Resources\estoque.png" />
+    <None Include="Resources\CONTVENDA.png" />
+    <None Include="Resources\CCCA.png" />
+    <None Include="Resources\2comercio-e-compras.png" />
     <None Include="Resources\loading-gif-transparent-10.gif" />
   </ItemGroup>
   <ItemGroup />
