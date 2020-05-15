@@ -61,16 +61,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DllImportAttribute.cs" />
+    <Compile Include="frmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaCliente.Designer.cs">
+      <DependentUpon>frmListaCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLoad.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLoad.Designer.cs">
       <DependentUpon>frmLoad.cs</DependentUpon>
     </Compile>
-    <Compile Include="models-controllers\DAOcliente.cs" />
-    <Compile Include="models-controllers\Venda.cs" />
-    <Compile Include="models-controllers\Cliente.cs" />
-    <Compile Include="models-controllers\Conexao.cs" />
+    <Compile Include="DAOcliente.cs" />
+    <Compile Include="Venda.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Conexao.cs" />
     <Compile Include="frmNovaVenda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,11 +96,17 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="models-controllers\ItemVenda.cs" />
-    <Compile Include="models-controllers\Produto.cs" />
-    <Compile Include="models-controllers\Vendedor.cs" />
+    <Compile Include="ItemVenda.cs" />
+    <Compile Include="Produto.cs" />
+    <Compile Include="Vendedor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaCliente.resx">
+      <DependentUpon>frmListaCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLoad.resx">
       <DependentUpon>frmLoad.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,13 +152,14 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="models-controllers\SharpVendas.mdf">
+    <Content Include="SharpVendas.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="models-controllers\SharpVendas_log.ldf">
+    <Content Include="SharpVendas_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>SharpVendas.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\icon.png" />
     <None Include="Resources\unnamed.jpg" />
     <None Include="Resources\RELAT.png" />
     <None Include="Resources\introFINAL.jpg" />

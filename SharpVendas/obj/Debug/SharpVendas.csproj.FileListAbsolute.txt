@@ -9,6 +9,8 @@ C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.exe
 C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.pdb
 C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.frmPrincipal.resources
 C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.frmNovaVenda.resources
-C:\Users\lucas\source\repos\SharpVendas\SharpVendas\bin\Debug\models-controllers\SharpVendas.mdf
-C:\Users\lucas\source\repos\SharpVendas\SharpVendas\bin\Debug\models-controllers\SharpVendas_log.ldf
 C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.frmLoad.resources
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.frmCliente.resources
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\bin\Debug\SharpVendas.mdf
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\bin\Debug\SharpVendas_log.ldf
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.frmListaCliente.resources
