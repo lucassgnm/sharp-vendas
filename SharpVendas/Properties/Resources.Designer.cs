@@ -73,6 +73,16 @@ namespace SharpVendas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _interface {
+            get {
+                object obj = ResourceManager.GetObject("_interface", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CCCA {
             get {
                 object obj = ResourceManager.GetObject("CCCA", resourceCulture);
@@ -136,6 +146,16 @@ namespace SharpVendas.Properties {
         internal static System.Drawing.Bitmap loading_gif_transparent_10 {
             get {
                 object obj = ResourceManager.GetObject("loading_gif_transparent_10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap opcao_multimidia {
+            get {
+                object obj = ResourceManager.GetObject("opcao_multimidia", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

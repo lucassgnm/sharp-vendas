@@ -8,9 +8,13 @@ C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.csproj
 C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.exe
 C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.pdb
 C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.frmPrincipal.resources
-C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.frmNovaVenda.resources
 C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.frmLoad.resources
-C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.frmCliente.resources
 C:\Users\lucas\source\repos\SharpVendas\SharpVendas\bin\Debug\SharpVendas.mdf
 C:\Users\lucas\source\repos\SharpVendas\SharpVendas\bin\Debug\SharpVendas_log.ldf
-C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.frmListaCliente.resources
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.clienteFrm.resources
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.clienteListaFrm.resources
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.vendedorListaFrm.resources
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.novaVendaFrm.resources
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.produtoFrm.resources
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.frmVendedor.resources
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.produtoListaFrm.resources

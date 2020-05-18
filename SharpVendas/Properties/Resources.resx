@@ -139,6 +139,9 @@
   <data name="loading_gif_transparent_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loading-gif-transparent-10.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="opcao_multimidia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\opcao-multimidia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="RELAT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RELAT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -147,5 +150,8 @@
   </data>
   <data name="_2comercio_e_compras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2comercio-e-compras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_interface" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\interface.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

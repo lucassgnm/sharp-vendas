@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SharpVendas.models_controllers
 {
-    class Produto
+    public class Produto
     {
         private int _id;
         public int id
@@ -22,8 +22,8 @@ namespace SharpVendas.models_controllers
             set => _descricao = value;
         }
 
-        private float _valor;
-        public float valor
+        private double _valor;
+        public double valor
         {
             get => _valor;
             set => _valor = value;

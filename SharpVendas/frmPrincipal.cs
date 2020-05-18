@@ -42,12 +42,22 @@ namespace SharpVendas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new frmNovaVenda().ShowDialog();
+            new novaVendaFrm().ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            new frmCliente().ShowDialog();
+            new clienteFrm().ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new frmVendedor().ShowDialog();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            new produtoFrm().ShowDialog();
         }
     }
 }

@@ -61,18 +61,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="produtoDAO.cs" />
+    <Compile Include="produtoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="produtoFrm.Designer.cs">
+      <DependentUpon>produtoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="produtoListaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="produtoListaFrm.Designer.cs">
+      <DependentUpon>produtoListaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vendedorDAO.cs" />
     <Compile Include="DllImportAttribute.cs" />
-    <Compile Include="frmCliente.cs">
+    <Compile Include="clienteFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCliente.Designer.cs">
-      <DependentUpon>frmCliente.cs</DependentUpon>
+    <Compile Include="clienteFrm.Designer.cs">
+      <DependentUpon>clienteFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmListaCliente.cs">
+    <Compile Include="clienteListaFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmListaCliente.Designer.cs">
-      <DependentUpon>frmListaCliente.cs</DependentUpon>
+    <Compile Include="clienteListaFrm.Designer.cs">
+      <DependentUpon>clienteListaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vendedorListaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vendedorListaFrm.Designer.cs">
+      <DependentUpon>vendedorListaFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLoad.cs">
       <SubType>Form</SubType>
@@ -80,15 +100,21 @@
     <Compile Include="frmLoad.Designer.cs">
       <DependentUpon>frmLoad.cs</DependentUpon>
     </Compile>
-    <Compile Include="DAOcliente.cs" />
+    <Compile Include="clienteDAO.cs" />
+    <Compile Include="vendedorFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vendedorFrm.Designer.cs">
+      <DependentUpon>vendedorFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Venda.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Conexao.cs" />
-    <Compile Include="frmNovaVenda.cs">
+    <Compile Include="novaVendaFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNovaVenda.Designer.cs">
-      <DependentUpon>frmNovaVenda.cs</DependentUpon>
+    <Compile Include="novaVendaFrm.Designer.cs">
+      <DependentUpon>novaVendaFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -101,20 +127,32 @@
     <Compile Include="Vendedor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCliente.resx">
-      <DependentUpon>frmCliente.cs</DependentUpon>
+    <EmbeddedResource Include="clienteFrm.resx">
+      <DependentUpon>clienteFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmListaCliente.resx">
-      <DependentUpon>frmListaCliente.cs</DependentUpon>
+    <EmbeddedResource Include="clienteListaFrm.resx">
+      <DependentUpon>clienteListaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="produtoFrm.resx">
+      <DependentUpon>produtoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="produtoListaFrm.resx">
+      <DependentUpon>produtoListaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vendedorListaFrm.resx">
+      <DependentUpon>vendedorListaFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoad.resx">
       <DependentUpon>frmLoad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNovaVenda.resx">
-      <DependentUpon>frmNovaVenda.cs</DependentUpon>
+    <EmbeddedResource Include="novaVendaFrm.resx">
+      <DependentUpon>novaVendaFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vendedorFrm.resx">
+      <DependentUpon>vendedorFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -152,6 +190,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\opcao-multimidia.png" />
+    <None Include="Resources\interface.png" />
     <Content Include="SharpVendas.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

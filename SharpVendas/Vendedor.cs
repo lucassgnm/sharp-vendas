@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SharpVendas.models_controllers
 {
-    class Vendedor
+    public class Vendedor
     {
         private int _id;
         public int id
@@ -29,11 +29,11 @@ namespace SharpVendas.models_controllers
             set => _cpf = value;
         }
 
-        private DateTime _dataadmis;
-        public DateTime dataadmis
+        private DateTime _dataadimis;
+        public DateTime dataadimis
         {
-            get => _dataadmis;
-            set => _dataadmis = value;
+            get => _dataadimis;
+            set => _dataadimis = value;
         }
     }
 }
