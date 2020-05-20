@@ -48,6 +48,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -67,12 +85,19 @@
     <Compile Include="frmQtd.Designer.cs">
       <DependentUpon>frmQtd.cs</DependentUpon>
     </Compile>
+    <Compile Include="itemVendaDAO.cs" />
     <Compile Include="novaVendaDAO.cs" />
     <Compile Include="clienteListaFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="clienteListaFrm.Designer.cs">
       <DependentUpon>clienteListaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="novaVendaRel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="novaVendaRel.Designer.cs">
+      <DependentUpon>novaVendaRel.cs</DependentUpon>
     </Compile>
     <Compile Include="produtoDAO.cs" />
     <Compile Include="produtoFrm.cs">
@@ -87,6 +112,15 @@
     <Compile Include="produtoListaFrm.Designer.cs">
       <DependentUpon>produtoListaFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SharpVendasDataSet.cs">
+      <DependentUpon>SharpVendasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SharpVendasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SharpVendasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="vendedorDAO.cs" />
     <Compile Include="DllImportAttribute.cs" />
     <Compile Include="clienteFrm.cs">
@@ -143,12 +177,16 @@
     <EmbeddedResource Include="frmQtd.resx">
       <DependentUpon>frmQtd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="novaVendaRel.resx">
+      <DependentUpon>novaVendaRel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="produtoFrm.resx">
       <DependentUpon>produtoFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="produtoListaFrm.resx">
       <DependentUpon>produtoListaFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="novaVendaReport.rdlc" />
     <EmbeddedResource Include="vendedorListaFrm - Cópia .resx">
       <DependentUpon>vendedorListaFrm - Cópia .cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +212,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -183,6 +222,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SharpVendasDataSet.xsc">
+      <DependentUpon>SharpVendasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SharpVendasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SharpVendasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SharpVendasDataSet.xss">
+      <DependentUpon>SharpVendasDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -200,6 +250,19 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\opcao-multimidia.png" />
     <None Include="Resources\interface.png" />
     <Content Include="SharpVendas.mdf">

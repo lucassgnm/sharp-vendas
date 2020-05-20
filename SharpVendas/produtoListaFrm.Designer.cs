@@ -69,6 +69,7 @@
             this.datanasc});
             this.dgvDadosProdutos.Location = new System.Drawing.Point(12, 8);
             this.dgvDadosProdutos.Name = "dgvDadosProdutos";
+            this.dgvDadosProdutos.ReadOnly = true;
             this.dgvDadosProdutos.RowHeadersWidth = 51;
             this.dgvDadosProdutos.RowTemplate.Height = 24;
             this.dgvDadosProdutos.Size = new System.Drawing.Size(776, 426);
@@ -81,6 +82,7 @@
             this.Column1.HeaderText = "Código";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             this.Column1.Width = 60;
             // 
             // Column2
@@ -89,6 +91,7 @@
             this.Column2.HeaderText = "Descrição";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             this.Column2.Width = 200;
             // 
             // rg
@@ -97,6 +100,7 @@
             this.rg.HeaderText = "Valor";
             this.rg.MinimumWidth = 6;
             this.rg.Name = "rg";
+            this.rg.ReadOnly = true;
             this.rg.Width = 80;
             // 
             // datanasc
@@ -105,6 +109,7 @@
             this.datanasc.HeaderText = "Quantidade";
             this.datanasc.MinimumWidth = 6;
             this.datanasc.Name = "datanasc";
+            this.datanasc.ReadOnly = true;
             this.datanasc.Width = 60;
             // 
             // produtoListaFrm

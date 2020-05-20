@@ -36,15 +36,15 @@ namespace SharpVendas
             set => _qtde = value;
         }
 
-        private int _valorun;
-        public int valorun
+        private double _valorun;
+        public double valorun
         {
             get => _valorun;
             set => _valorun = value;
         }
 
-        private int _valortotal;
-        public int valortotal
+        private double _valortotal;
+        public double valortotal
         {
             get => _valortotal;
             set => _valortotal = value;

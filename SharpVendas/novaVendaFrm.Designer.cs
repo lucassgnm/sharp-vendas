@@ -47,12 +47,13 @@
             this.txtCpfCliente = new System.Windows.Forms.TextBox();
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
             this.ltvItems = new System.Windows.Forms.ListView();
-            this.btnIncluirProd = new System.Windows.Forms.Button();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnIncluirProd = new System.Windows.Forms.Button();
+            this.btnFinaliza = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -231,16 +232,6 @@
             this.ltvItems.View = System.Windows.Forms.View.Details;
             this.ltvItems.SelectedIndexChanged += new System.EventHandler(this.ltvItems_SelectedIndexChanged);
             // 
-            // btnIncluirProd
-            // 
-            this.btnIncluirProd.Location = new System.Drawing.Point(404, 625);
-            this.btnIncluirProd.Name = "btnIncluirProd";
-            this.btnIncluirProd.Size = new System.Drawing.Size(202, 33);
-            this.btnIncluirProd.TabIndex = 7;
-            this.btnIncluirProd.Text = "Incluir produto (F2)";
-            this.btnIncluirProd.UseVisualStyleBackColor = true;
-            this.btnIncluirProd.Click += new System.EventHandler(this.btnIncluirProd_Click);
-            // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "Codigo";
@@ -265,11 +256,32 @@
             this.columnHeader5.Text = "Valor total";
             this.columnHeader5.Width = 100;
             // 
+            // btnIncluirProd
+            // 
+            this.btnIncluirProd.Location = new System.Drawing.Point(404, 625);
+            this.btnIncluirProd.Name = "btnIncluirProd";
+            this.btnIncluirProd.Size = new System.Drawing.Size(202, 33);
+            this.btnIncluirProd.TabIndex = 7;
+            this.btnIncluirProd.Text = "Incluir produto (F2)";
+            this.btnIncluirProd.UseVisualStyleBackColor = true;
+            this.btnIncluirProd.Click += new System.EventHandler(this.btnIncluirProd_Click);
+            // 
+            // btnFinaliza
+            // 
+            this.btnFinaliza.Location = new System.Drawing.Point(865, 608);
+            this.btnFinaliza.Name = "btnFinaliza";
+            this.btnFinaliza.Size = new System.Drawing.Size(148, 58);
+            this.btnFinaliza.TabIndex = 8;
+            this.btnFinaliza.Text = "Finalizar venda";
+            this.btnFinaliza.UseVisualStyleBackColor = true;
+            this.btnFinaliza.Click += new System.EventHandler(this.btnFinaliza_Click);
+            // 
             // novaVendaFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1025, 670);
+            this.Controls.Add(this.btnFinaliza);
             this.Controls.Add(this.btnIncluirProd);
             this.Controls.Add(this.ltvItems);
             this.Controls.Add(this.groupBox4);
@@ -323,5 +335,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.Button btnFinaliza;
     }
 }

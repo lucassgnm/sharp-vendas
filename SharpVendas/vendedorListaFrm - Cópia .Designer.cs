@@ -50,6 +50,7 @@
             this.datanasc});
             this.dgvDadosVendedores.Location = new System.Drawing.Point(12, 12);
             this.dgvDadosVendedores.Name = "dgvDadosVendedores";
+            this.dgvDadosVendedores.ReadOnly = true;
             this.dgvDadosVendedores.RowHeadersWidth = 51;
             this.dgvDadosVendedores.RowTemplate.Height = 24;
             this.dgvDadosVendedores.Size = new System.Drawing.Size(776, 426);
@@ -63,6 +64,7 @@
             this.Column1.HeaderText = "Código";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             this.Column1.Width = 60;
             // 
             // Column2
@@ -71,6 +73,7 @@
             this.Column2.HeaderText = "Nome";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             this.Column2.Width = 200;
             // 
             // CPF
@@ -79,6 +82,7 @@
             this.CPF.HeaderText = "CPF";
             this.CPF.MinimumWidth = 6;
             this.CPF.Name = "CPF";
+            this.CPF.ReadOnly = true;
             this.CPF.Width = 125;
             // 
             // datanasc
@@ -87,6 +91,7 @@
             this.datanasc.HeaderText = "Data de adimissão";
             this.datanasc.MinimumWidth = 6;
             this.datanasc.Name = "datanasc";
+            this.datanasc.ReadOnly = true;
             this.datanasc.Width = 80;
             // 
             // txtFiltrar
@@ -108,7 +113,7 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtrar resultados";
             // 
-            // vendedorListaFrm
+            // novaVendaListaVendedorFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -118,7 +123,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "vendedorListaFrm";
+            this.Name = "novaVendaListaVendedorFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listagem de vendedor";
             this.Load += new System.EventHandler(this.frmListaVendedor_Load);

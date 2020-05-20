@@ -4,10 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SharpVendas.models_controllers;
+using static SharpVendas.SharpVendasDataSet;
 
 namespace SharpVendas
 {
@@ -22,6 +24,9 @@ namespace SharpVendas
         }
 
         int newid;
+
+        public object SharpVendasDataSetTableAdapters { get; private set; }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             
@@ -73,8 +78,46 @@ namespace SharpVendas
 
         private void setDadosItemVenda(Produto p1)
         {
+            frmQtd frm = new frmQtd();
+            frm.ShowDialog();
+            int qtd = Convert.ToInt32(frm.getQtd());
+            double vlrun = p1.valor;
+            double total = vlrun * qtd;
             ListViewItem ltvi = ltvItems.Items.Add(p1.id.ToString());
             ltvi.SubItems.Add(p1.descricao);
+            ltvi.SubItems.Add(Convert.ToString(qtd));
+            ltvi.SubItems.Add(Convert.ToString(vlrun));
+            ltvi.SubItems.Add(Convert.ToString(total));
+        }
+
+        private Venda getVenda()
+        {
+            double total = 0;
+            for (int i = 0; i < ltvItems.Items.Count; i++)
+            {
+                total += Convert.ToDouble(ltvItems.Items[i].SubItems[4].Text);
+            }
+
+            Venda v = new Venda();
+            v.idcliente = Convert.ToInt32(txtClienteId.Text);
+            v.idvendedor = Convert.ToInt32(txtVendedorId.Text);
+            v.datavenda = DateTime.Now;
+            v.total = total;
+            return v;
+        }
+
+        private ItemVenda getItemVenda()
+        {
+            ItemVenda iv = new ItemVenda();
+            for (int i = 0; i < ltvItems.Items.Count; i++)
+            {
+                iv.idvenda = Convert.ToInt32(txtId.Text);
+                iv.idproduto = Convert.ToInt32(ltvItems.Items[i].SubItems[0].Text);
+                iv.qtde = Convert.ToInt32(ltvItems.Items[i].SubItems[2].Text);
+                iv.valorun = Convert.ToDouble(ltvItems.Items[i].SubItems[3].Text);
+                iv.valortotal = Convert.ToDouble(ltvItems.Items[i].SubItems[4].Text);
+            }
+            return iv;
         }
 
         private void novaVendaFrm_KeyPress(object sender, KeyEventArgs e)
@@ -83,11 +126,9 @@ namespace SharpVendas
             {
                 produtoListaFrm frm = new produtoListaFrm();
                 frm.ShowDialog();
-                
+
                 if (frm.DialogResult == DialogResult.OK)
                 {
-                    frmQtd frm2 = new frmQtd();
-                    frm2.ShowDialog();
                     setDadosItemVenda(frm.getProduto());
                 }
             }
@@ -97,6 +138,11 @@ namespace SharpVendas
         {
             produtoListaFrm frm = new produtoListaFrm();
             frm.ShowDialog();
+
+            if (frm.DialogResult == DialogResult.OK)
+            {
+                setDadosItemVenda(frm.getProduto());
+            }        
         }
 
         private void novaVendaFrm_Load(object sender, EventArgs e)
@@ -110,5 +156,13 @@ namespace SharpVendas
 
         }
 
+        private void btnFinaliza_Click(object sender, EventArgs e)
+        {
+            new novaVendaDAO().inserirVenda(getVenda());
+            new itemVendaDAO().inserirItemVenda(getItemVenda());
+            this.DialogResult = DialogResult.OK;
+            //precisa atualizar o dataset
+            new novaVendaRel().ShowDialog();
+        }
     }
 }

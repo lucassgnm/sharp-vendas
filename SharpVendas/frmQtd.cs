@@ -23,7 +23,9 @@ namespace SharpVendas
             this.DialogResult = DialogResult.OK;
         }
 
-        private String getQtd()
+        
+
+        public String getQtd()
         {
             String res = txtQtd.Text;
             return res;

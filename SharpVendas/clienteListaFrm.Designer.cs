@@ -52,6 +52,7 @@
             this.datanasc});
             this.dgvDadosClientes.Location = new System.Drawing.Point(12, 12);
             this.dgvDadosClientes.Name = "dgvDadosClientes";
+            this.dgvDadosClientes.ReadOnly = true;
             this.dgvDadosClientes.RowHeadersWidth = 51;
             this.dgvDadosClientes.RowTemplate.Height = 24;
             this.dgvDadosClientes.Size = new System.Drawing.Size(776, 426);
@@ -65,6 +66,7 @@
             this.Column1.HeaderText = "Código";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             this.Column1.Width = 60;
             // 
             // Column2
@@ -73,6 +75,7 @@
             this.Column2.HeaderText = "Nome";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             this.Column2.Width = 200;
             // 
             // CPF
@@ -81,6 +84,7 @@
             this.CPF.HeaderText = "CPF";
             this.CPF.MinimumWidth = 6;
             this.CPF.Name = "CPF";
+            this.CPF.ReadOnly = true;
             this.CPF.Width = 125;
             // 
             // rg
@@ -89,6 +93,7 @@
             this.rg.HeaderText = "RG";
             this.rg.MinimumWidth = 6;
             this.rg.Name = "rg";
+            this.rg.ReadOnly = true;
             this.rg.Width = 80;
             // 
             // datanasc
@@ -97,6 +102,7 @@
             this.datanasc.HeaderText = "Data de nascimento";
             this.datanasc.MinimumWidth = 6;
             this.datanasc.Name = "datanasc";
+            this.datanasc.ReadOnly = true;
             this.datanasc.Width = 80;
             // 
             // groupBox1
