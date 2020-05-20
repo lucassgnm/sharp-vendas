@@ -44,7 +44,7 @@ namespace SharpVendas
         {
             dgvDadosProdutos.DataSource = null;
             DAOproduto q = new DAOproduto();
-            dgvDadosProdutos.DataSource = q.listaTodosProdutos(txtFiltrar.Text);
+            dgvDadosProdutos.DataSource = q.listaTodosProdutosLike(txtFiltrar.Text);
         }
     }
 }

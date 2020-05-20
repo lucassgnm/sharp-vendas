@@ -72,7 +72,7 @@ namespace SharpVendas
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-            vendedorListaFrm frm = new vendedorListaFrm();
+            novaVendaListaVendedorFrm frm = new novaVendaListaVendedorFrm();
             frm.ShowDialog();
             if (frm.DialogResult == DialogResult.OK)
             {
@@ -95,6 +95,11 @@ namespace SharpVendas
             botaoInserir();
             limparTela();
             MessageBox.Show("Vendedor excluido!");
+        }
+
+        private void frmVendedor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

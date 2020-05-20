@@ -136,5 +136,10 @@ namespace SharpVendas
             limparTela();
             MessageBox.Show("Produto excluído!");
         }
+
+        private void produtoFrm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

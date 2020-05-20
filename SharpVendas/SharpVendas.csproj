@@ -61,6 +61,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmQtd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQtd.Designer.cs">
+      <DependentUpon>frmQtd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="novaVendaDAO.cs" />
+    <Compile Include="clienteListaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clienteListaFrm.Designer.cs">
+      <DependentUpon>clienteListaFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="produtoDAO.cs" />
     <Compile Include="produtoFrm.cs">
       <SubType>Form</SubType>
@@ -82,17 +95,11 @@
     <Compile Include="clienteFrm.Designer.cs">
       <DependentUpon>clienteFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="clienteListaFrm.cs">
+    <Compile Include="vendedorListaFrm - Cópia .cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="clienteListaFrm.Designer.cs">
-      <DependentUpon>clienteListaFrm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="vendedorListaFrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="vendedorListaFrm.Designer.cs">
-      <DependentUpon>vendedorListaFrm.cs</DependentUpon>
+    <Compile Include="vendedorListaFrm - Cópia .Designer.cs">
+      <DependentUpon>vendedorListaFrm - Cópia .cs</DependentUpon>
     </Compile>
     <Compile Include="frmLoad.cs">
       <SubType>Form</SubType>
@@ -133,14 +140,17 @@
     <EmbeddedResource Include="clienteListaFrm.resx">
       <DependentUpon>clienteListaFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmQtd.resx">
+      <DependentUpon>frmQtd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="produtoFrm.resx">
       <DependentUpon>produtoFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="produtoListaFrm.resx">
       <DependentUpon>produtoListaFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vendedorListaFrm.resx">
-      <DependentUpon>vendedorListaFrm.cs</DependentUpon>
+    <EmbeddedResource Include="vendedorListaFrm - Cópia .resx">
+      <DependentUpon>vendedorListaFrm - Cópia .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoad.resx">
       <DependentUpon>frmLoad.cs</DependentUpon>

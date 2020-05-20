@@ -172,9 +172,12 @@
             this.Controls.Add(this.gbrNome);
             this.Controls.Add(this.grbCodigo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmVendedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vendedores";
+            this.Load += new System.EventHandler(this.frmVendedor_Load);
             this.gbrDataNasc.ResumeLayout(false);
             this.gbrDataNasc.PerformLayout();
             this.gbrCPF.ResumeLayout(false);

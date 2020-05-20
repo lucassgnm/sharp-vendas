@@ -171,9 +171,12 @@
             this.Controls.Add(this.gbrNome);
             this.Controls.Add(this.grbCodigo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "produtoFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estoque";
+            this.Load += new System.EventHandler(this.produtoFrm_Load);
             this.gbrRG.ResumeLayout(false);
             this.gbrRG.PerformLayout();
             this.gbrCPF.ResumeLayout(false);

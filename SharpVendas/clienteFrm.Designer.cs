@@ -196,6 +196,8 @@
             this.Controls.Add(this.gbrNome);
             this.Controls.Add(this.grbCodigo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "clienteFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro cliente";

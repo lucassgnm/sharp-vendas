@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SharpVendas.models_controllers
 {
-    class Venda
+    public class Venda
     {
         private int _id;
         public int id

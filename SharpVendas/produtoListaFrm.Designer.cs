@@ -46,7 +46,7 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 445);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(317, 58);
-            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtrar resultados";
             // 
@@ -56,7 +56,7 @@
             this.txtFiltrar.Location = new System.Drawing.Point(6, 21);
             this.txtFiltrar.Name = "txtFiltrar";
             this.txtFiltrar.Size = new System.Drawing.Size(305, 27);
-            this.txtFiltrar.TabIndex = 2;
+            this.txtFiltrar.TabIndex = 0;
             this.txtFiltrar.TextChanged += new System.EventHandler(this.txtFiltrar_TextChanged);
             // 
             // dgvDadosProdutos
@@ -115,6 +115,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvDadosProdutos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "produtoListaFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listagem de produtos";

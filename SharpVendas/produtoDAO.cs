@@ -55,11 +55,11 @@ namespace SharpVendas.models_controllers
             return null;
         }
 
-        public List<Produto> listaTodosProdutos(String pesq)
+        public List<Produto> listaTodosProdutosLike(String pesq)
         {
             Conexao conn = new Conexao();
             SqlCommand query = new SqlCommand(
-                "select id, descricao, valor, qtde from produto where nome like '%" + pesq + "%'");
+                "select id, descricao, valor, qtde from produto where descricao like '%" + pesq + "%'");
             query.Connection = conn.Abrir();
             using (SqlDataReader rs = query.ExecuteReader())
             {
@@ -89,7 +89,7 @@ namespace SharpVendas.models_controllers
             SqlCommand query = new SqlCommand(
                 "update produto set descricao = @descricao, " +
                 "valor = @valor, " +
-                "qtde = @qtde, " +
+                "qtde = @qtde " +
                 "where id = @id");
             query.Connection = conn.Abrir();
             query.Parameters.Add("@descricao", SqlDbType.VarChar).Value = p1.descricao;

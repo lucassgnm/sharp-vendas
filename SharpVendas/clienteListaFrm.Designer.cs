@@ -126,6 +126,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvDadosClientes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "clienteListaFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listagem de clientes";
