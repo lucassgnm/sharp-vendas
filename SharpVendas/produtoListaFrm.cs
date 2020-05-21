@@ -35,7 +35,7 @@ namespace SharpVendas
             Produto cl = new Produto();
             cl.id = Convert.ToInt32(dgvDadosProdutos.CurrentRow.Cells[0].Value);
             cl.descricao = dgvDadosProdutos.CurrentRow.Cells[1].Value.ToString();
-            cl.valor = Convert.ToDouble(dgvDadosProdutos.CurrentRow.Cells[2].Value);
+            cl.valor = Convert.ToSingle(dgvDadosProdutos.CurrentRow.Cells[2].Value);
             cl.qtde = Convert.ToInt32(dgvDadosProdutos.CurrentRow.Cells[3].Value);
             return cl;
         }

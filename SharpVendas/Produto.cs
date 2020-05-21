@@ -22,8 +22,8 @@ namespace SharpVendas.models_controllers
             set => _descricao = value;
         }
 
-        private double _valor;
-        public double valor
+        private float _valor;
+        public float valor
         {
             get => _valor;
             set => _valor = value;

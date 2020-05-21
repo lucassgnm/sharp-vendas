@@ -37,7 +37,7 @@ namespace SharpVendas
             }
             p1.descricao = txtDescricao.Text;
             String newTxtValor = txtValor.Text.Replace("R$", "").Trim();
-            p1.valor = Convert.ToDouble(txtQtde.Text);
+            p1.valor = Convert.ToSingle(txtQtde.Text);
             p1.qtde = Convert.ToInt32(txtQtde.Text);
             return p1;
         }

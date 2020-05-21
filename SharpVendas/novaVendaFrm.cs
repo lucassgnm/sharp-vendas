@@ -43,7 +43,7 @@ namespace SharpVendas
             txtNomeCliente.Text = c1.nome;
             txtCpfCliente.Text = c1.cpf;
             txtRgCliente.Text = c1.rg;
-            txtDataNascCliente.Text = c1.datanasc.ToString();
+            txtDataNascCliente.Text = c1.datanasc.ToString("dd/MM/yyyy");
         }
 
         private void button2_Click(object sender, EventArgs e)

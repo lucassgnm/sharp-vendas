@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Globalization;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -21,7 +22,7 @@ namespace SharpVendas.models_controllers
             query.Connection = conn.Abrir();
 
             query.Parameters.Add("@descricao", SqlDbType.VarChar).Value = produto.descricao;
-            query.Parameters.Add("@valor", SqlDbType.Real).Value = produto.valor;
+            query.Parameters.Add("@valor", SqlDbType.Decimal).Value = produto.valor;
             query.Parameters.Add("@qtde", SqlDbType.Int).Value = produto.qtde;
             query.ExecuteNonQuery();
             conn.Fechar();
@@ -93,7 +94,7 @@ namespace SharpVendas.models_controllers
                 "where id = @id");
             query.Connection = conn.Abrir();
             query.Parameters.Add("@descricao", SqlDbType.VarChar).Value = p1.descricao;
-            query.Parameters.Add("@valor", SqlDbType.Real).Value = p1.valor;
+            query.Parameters.Add("@valor", SqlDbType.Decimal).Value = p1.valor;
             query.Parameters.Add("@qtde", SqlDbType.Int).Value = p1.qtde;
             query.Parameters.Add("@id", SqlDbType.Int).Value = p1.id;
             query.ExecuteNonQuery();
