@@ -5772,17 +5772,18 @@ join venda on cliente.id = venda.idcliente
 join vendedor on venda.idvendedor = vendedor.id
 join itemvenda on itemvenda.idvenda = venda.id 
 join produto on itemvenda.idproduto = produto.id
-where venda.id = (select max(venda.id)
-                from venda)";
+where venda.id = @id";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(SharpVendasDataSet.ConsUltimaVendaDataTable dataTable) {
+        public virtual int Fill(SharpVendasDataSet.ConsUltimaVendaDataTable dataTable, int id) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(id));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -5794,8 +5795,9 @@ where venda.id = (select max(venda.id)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual SharpVendasDataSet.ConsUltimaVendaDataTable GetData() {
+        public virtual SharpVendasDataSet.ConsUltimaVendaDataTable GetData(int id) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(id));
             SharpVendasDataSet.ConsUltimaVendaDataTable dataTable = new SharpVendasDataSet.ConsUltimaVendaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

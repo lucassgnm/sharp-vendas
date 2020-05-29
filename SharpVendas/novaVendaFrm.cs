@@ -23,7 +23,7 @@ namespace SharpVendas
             txtId.Text = newid + "";
         }
 
-        int newid;
+        public int newid;
 
         public object SharpVendasDataSetTableAdapters { get; private set; }
 
@@ -81,8 +81,8 @@ namespace SharpVendas
             frmQtd frm = new frmQtd();
             frm.ShowDialog();
             int qtd = Convert.ToInt32(frm.getQtd());
-            double vlrun = p1.valor;
-            double total = vlrun * qtd;
+            float vlrun = p1.valor;
+            float total = vlrun * qtd;
             ListViewItem ltvi = ltvItems.Items.Add(p1.id.ToString());
             ltvi.SubItems.Add(p1.descricao);
             ltvi.SubItems.Add(Convert.ToString(qtd));
@@ -92,10 +92,10 @@ namespace SharpVendas
 
         private Venda getVenda()
         {
-            double total = 0;
+            float total = 0;
             for (int i = 0; i < ltvItems.Items.Count; i++)
             {
-                total += Convert.ToDouble(ltvItems.Items[i].SubItems[4].Text);
+                total += Convert.ToSingle(ltvItems.Items[i].SubItems[4].Text);
             }
 
             Venda v = new Venda();
@@ -106,18 +106,20 @@ namespace SharpVendas
             return v;
         }
 
-        private ItemVenda getItemVenda()
+        public List<ItemVenda> getItemVenda()
         {
-            ItemVenda iv = new ItemVenda();
+            List<ItemVenda> itens = new List<ItemVenda>();
             for (int i = 0; i < ltvItems.Items.Count; i++)
             {
+                ItemVenda iv = new ItemVenda();
                 iv.idvenda = Convert.ToInt32(txtId.Text);
                 iv.idproduto = Convert.ToInt32(ltvItems.Items[i].SubItems[0].Text);
                 iv.qtde = Convert.ToInt32(ltvItems.Items[i].SubItems[2].Text);
-                iv.valorun = Convert.ToDouble(ltvItems.Items[i].SubItems[3].Text);
-                iv.valortotal = Convert.ToDouble(ltvItems.Items[i].SubItems[4].Text);
+                iv.valorun = Convert.ToSingle(ltvItems.Items[i].SubItems[3].Text);
+                iv.valortotal = Convert.ToSingle(ltvItems.Items[i].SubItems[4].Text);
+                itens.Add(iv);
             }
-            return iv;
+            return itens;
         }
 
         private void novaVendaFrm_KeyPress(object sender, KeyEventArgs e)
@@ -147,7 +149,7 @@ namespace SharpVendas
 
         private void novaVendaFrm_Load(object sender, EventArgs e)
         {
-            this.KeyPreview = true;
+                this.KeyPreview = true;
             this.KeyDown += new KeyEventHandler(novaVendaFrm_KeyPress);
         }
 
@@ -162,7 +164,8 @@ namespace SharpVendas
             new itemVendaDAO().inserirItemVenda(getItemVenda());
             this.DialogResult = DialogResult.OK;
             //precisa atualizar o dataset
-            new novaVendaRel().ShowDialog();
+            novaVendaRel nv = new novaVendaRel(newid);
+            nv.ShowDialog();
         }
     }
 }

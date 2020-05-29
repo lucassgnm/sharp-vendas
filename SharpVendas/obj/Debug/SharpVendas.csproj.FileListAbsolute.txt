@@ -81,3 +81,4 @@ C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.novaVe
 C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\RdlCompile.cache
 C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\RdlCompile.compiled
 C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.csproj.CopyComplete
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.frmVendasRel.resources

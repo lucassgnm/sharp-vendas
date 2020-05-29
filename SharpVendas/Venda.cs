@@ -36,8 +36,8 @@ namespace SharpVendas.models_controllers
             set => _datavenda = value;
         }
 
-        private double _total;
-        public double total
+        private float _total;
+        public float total
         {
             get => _total;
             set => _total = value;

@@ -14,5 +14,6 @@ namespace SharpVendas.SharpVendasDataSetTableAdapters {
     
     
     public partial class ConsUltimaVendaTableAdapter {
+        
     }
 }

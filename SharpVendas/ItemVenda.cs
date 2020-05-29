@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SharpVendas
 {
-    class ItemVenda
+    public class ItemVenda
     {
         private int _id;
         public int id
@@ -36,15 +36,15 @@ namespace SharpVendas
             set => _qtde = value;
         }
 
-        private double _valorun;
-        public double valorun
+        private float _valorun;
+        public float valorun
         {
             get => _valorun;
             set => _valorun = value;
         }
 
-        private double _valortotal;
-        public double valortotal
+        private float _valortotal;
+        public float valortotal
         {
             get => _valortotal;
             set => _valortotal = value;

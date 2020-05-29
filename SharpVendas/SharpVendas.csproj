@@ -79,12 +79,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmVendasRel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVendasRel.Designer.cs">
+      <DependentUpon>frmVendasRel.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQtd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmQtd.Designer.cs">
       <DependentUpon>frmQtd.cs</DependentUpon>
     </Compile>
+    <Compile Include="UltimaVenda.cs" />
     <Compile Include="itemVendaDAO.cs" />
     <Compile Include="novaVendaDAO.cs" />
     <Compile Include="clienteListaFrm.cs">
@@ -177,6 +184,9 @@
     <EmbeddedResource Include="frmQtd.resx">
       <DependentUpon>frmQtd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmVendasRel.resx">
+      <DependentUpon>frmVendasRel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="novaVendaRel.resx">
       <DependentUpon>novaVendaRel.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,7 +196,8 @@
     <EmbeddedResource Include="produtoListaFrm.resx">
       <DependentUpon>produtoListaFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="novaVendaReport.rdlc" />
+    <EmbeddedResource Include="UltimaVendaRep.rdlc" />
+    <EmbeddedResource Include="vendasRel.rdlc" />
     <EmbeddedResource Include="vendedorListaFrm - Cópia .resx">
       <DependentUpon>vendedorListaFrm - Cópia .cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +224,68 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Cliente.datasource" />
+    <None Include="Properties\DataSources\clienteFrm.datasource" />
+    <None Include="Properties\DataSources\clienteListaFrm.datasource" />
+    <None Include="Properties\DataSources\Conexao.datasource" />
+    <None Include="Properties\DataSources\DllImportAttribute.datasource" />
+    <None Include="Properties\DataSources\frmLoad.datasource" />
+    <None Include="Properties\DataSources\frmPrincipal.datasource" />
+    <None Include="Properties\DataSources\frmQtd.datasource" />
+    <None Include="Properties\DataSources\frmVendasRel.datasource" />
+    <None Include="Properties\DataSources\frmVendedor.datasource" />
+    <None Include="Properties\DataSources\ItemVenda.datasource" />
+    <None Include="Properties\DataSources\itemVendaDAO.datasource" />
+    <None Include="Properties\DataSources\novaVendaDAO.datasource" />
+    <None Include="Properties\DataSources\novaVendaFrm.datasource" />
+    <None Include="Properties\DataSources\novaVendaListaVendedorFrm.datasource" />
+    <None Include="Properties\DataSources\novaVendaRel.datasource" />
+    <None Include="Properties\DataSources\produtoFrm.datasource" />
+    <None Include="Properties\DataSources\produtoListaFrm.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.models_controllers.DAOcliente.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.models_controllers.DAOproduto.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.models_controllers.DAOvendedor.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.models_controllers.Produto.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.models_controllers.UltimaVenda.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.models_controllers.Venda.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.models_controllers.Vendedor.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.SharpVendasDataSetTableAdapters.ClienteTableAdapter.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.SharpVendasDataSetTableAdapters.ConsUltimaVendaTableAdapter.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.SharpVendasDataSetTableAdapters.ItemVendaTableAdapter.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.SharpVendasDataSetTableAdapters.ProdutoTableAdapter.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.SharpVendasDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.SharpVendasDataSetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.SharpVendasDataSetTableAdapters.VendaTableAdapter.datasource" />
+    <None Include="Properties\DataSources\SharpVendas.SharpVendasDataSetTableAdapters.VendedorTableAdapter.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.ClienteDataTable.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.ClienteRow.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.ClienteRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.ClienteRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.ConsUltimaVendaDataTable.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.ConsUltimaVendaRow.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.ConsUltimaVendaRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.ConsUltimaVendaRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.ItemVendaDataTable.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.ItemVendaRow.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.ItemVendaRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.ItemVendaRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.ProdutoDataTable.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.ProdutoRow.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.ProdutoRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.ProdutoRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.VendaDataTable.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.VendaRow.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.VendaRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.VendaRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.VendedorDataTable.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.VendedorRow.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.VendedorRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\SharpVendasDataSet.VendedorRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\SqlServerTypes.Utilities.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -283,6 +356,8 @@
     <None Include="Resources\2comercio-e-compras.png" />
     <None Include="Resources\loading-gif-transparent-10.gif" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

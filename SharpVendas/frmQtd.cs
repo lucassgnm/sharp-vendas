@@ -35,5 +35,19 @@ namespace SharpVendas
         {
 
         }
+
+        private void txtQtd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtQtd_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                MessageBox.Show("Este campo aceita somente numero e virgula");
+            }
+        }
     }
 }

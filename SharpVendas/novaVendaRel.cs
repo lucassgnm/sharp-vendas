@@ -7,21 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SharpVendas.models_controllers;
 
 namespace SharpVendas
 {
     public partial class novaVendaRel : Form
     {
-        public novaVendaRel()
+        public novaVendaRel(int iv)
         {
             InitializeComponent();
+            id = iv;
         }
+        int id;
 
         private void novaVendaRel_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'SharpVendasDataSet.ConsUltimaVenda'. Você pode movê-la ou removê-la conforme necessário.
-            this.ConsUltimaVendaTableAdapter.Fill(this.SharpVendasDataSet.ConsUltimaVenda);
-
+            UltimaVendaBindingSource.DataSource =
+                new itemVendaDAO().listaUltimaVenda(id);
             this.reportViewer1.RefreshReport();
         }
     }

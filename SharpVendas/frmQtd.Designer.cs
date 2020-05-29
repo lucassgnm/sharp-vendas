@@ -41,6 +41,8 @@
             this.txtQtd.Name = "txtQtd";
             this.txtQtd.Size = new System.Drawing.Size(100, 27);
             this.txtQtd.TabIndex = 0;
+            this.txtQtd.TextChanged += new System.EventHandler(this.txtQtd_TextChanged);
+            this.txtQtd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQtd_KeyPress);
             // 
             // groupBox1
             // 

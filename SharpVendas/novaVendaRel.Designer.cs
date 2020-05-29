@@ -34,8 +34,10 @@
             this.SharpVendasDataSet = new SharpVendas.SharpVendasDataSet();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.ConsUltimaVendaTableAdapter = new SharpVendas.SharpVendasDataSetTableAdapters.ConsUltimaVendaTableAdapter();
+            this.UltimaVendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ConsUltimaVendaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SharpVendasDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UltimaVendaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // ConsUltimaVendaBindingSource
@@ -52,9 +54,9 @@
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.ConsUltimaVendaBindingSource;
+            reportDataSource1.Value = this.UltimaVendaBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "SharpVendas.novaVendaReport.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "SharpVendas.UltimaVendaRep.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
@@ -64,6 +66,10 @@
             // ConsUltimaVendaTableAdapter
             // 
             this.ConsUltimaVendaTableAdapter.ClearBeforeFill = true;
+            // 
+            // UltimaVendaBindingSource
+            // 
+            this.UltimaVendaBindingSource.DataSource = typeof(SharpVendas.models_controllers.UltimaVenda);
             // 
             // novaVendaRel
             // 
@@ -78,6 +84,7 @@
             this.Load += new System.EventHandler(this.novaVendaRel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ConsUltimaVendaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SharpVendasDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UltimaVendaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -88,5 +95,6 @@
         private System.Windows.Forms.BindingSource ConsUltimaVendaBindingSource;
         private SharpVendasDataSet SharpVendasDataSet;
         private SharpVendasDataSetTableAdapters.ConsUltimaVendaTableAdapter ConsUltimaVendaTableAdapter;
+        private System.Windows.Forms.BindingSource UltimaVendaBindingSource;
     }
 }
