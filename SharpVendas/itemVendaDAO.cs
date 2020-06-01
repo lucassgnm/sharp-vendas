@@ -30,8 +30,6 @@ namespace SharpVendas
                 query.Parameters.Add("@valortotal", SqlDbType.Real).Value = iv[i].valortotal;
                 query.ExecuteNonQuery();
             }
-
-            
             conn.Fechar();
         }
 

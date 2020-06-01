@@ -79,6 +79,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="estoqueRelFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="estoqueRelFrm.Designer.cs">
+      <DependentUpon>estoqueRelFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="funcionariosRelFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="funcionariosRelFrm.Designer.cs">
+      <DependentUpon>funcionariosRelFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpcRel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpcRel.Designer.cs">
+      <DependentUpon>frmOpcRel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clientesRelFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientesRelFrm.Designer.cs">
+      <DependentUpon>clientesRelFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVendasRel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,11 +205,24 @@
     <EmbeddedResource Include="clienteListaFrm.resx">
       <DependentUpon>clienteListaFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="estoqueRel.rdlc" />
+    <EmbeddedResource Include="estoqueRelFrm.resx">
+      <DependentUpon>estoqueRelFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOpcRel.resx">
+      <DependentUpon>frmOpcRel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientesRelFrm.resx">
+      <DependentUpon>clientesRelFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQtd.resx">
       <DependentUpon>frmQtd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVendasRel.resx">
       <DependentUpon>frmVendasRel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="funcionariosRelFrm.resx">
+      <DependentUpon>funcionariosRelFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="novaVendaRel.resx">
       <DependentUpon>novaVendaRel.cs</DependentUpon>
@@ -196,6 +233,8 @@
     <EmbeddedResource Include="produtoListaFrm.resx">
       <DependentUpon>produtoListaFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="clientesRel.rdlc" />
+    <EmbeddedResource Include="funcionariosRel.rdlc" />
     <EmbeddedResource Include="UltimaVendaRep.rdlc" />
     <EmbeddedResource Include="vendasRel.rdlc" />
     <EmbeddedResource Include="vendedorListaFrm - Cópia .resx">

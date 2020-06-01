@@ -160,12 +160,18 @@ namespace SharpVendas
 
         private void btnFinaliza_Click(object sender, EventArgs e)
         {
-            new novaVendaDAO().inserirVenda(getVenda());
-            new itemVendaDAO().inserirItemVenda(getItemVenda());
-            this.DialogResult = DialogResult.OK;
-            //precisa atualizar o dataset
-            novaVendaRel nv = new novaVendaRel(newid);
-            nv.ShowDialog();
+            if (getItemVenda().Count() != 0 && txtVendedorId.Text != "" && txtClienteId.Text != "")
+            {
+                new novaVendaDAO().inserirVenda(getVenda());
+                new itemVendaDAO().inserirItemVenda(getItemVenda());
+                this.DialogResult = DialogResult.OK;
+                //precisa atualizar o dataset
+                novaVendaRel nv = new novaVendaRel(newid);
+                nv.ShowDialog();
+            } else
+            {
+                MessageBox.Show("Pelo menos um item/cliente/vendedor deve ser inserido antes de finalizar a venda.");
+            }
         }
     }
 }

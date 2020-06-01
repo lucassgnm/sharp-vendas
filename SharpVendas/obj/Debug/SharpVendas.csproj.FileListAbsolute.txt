@@ -82,3 +82,7 @@ C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\RdlCompile.cache
 C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\RdlCompile.compiled
 C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.csproj.CopyComplete
 C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.frmVendasRel.resources
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.frmOpcRel.resources
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.clientesRelFrm.resources
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.estoqueRelFrm.resources
+C:\Users\lucas\source\repos\SharpVendas\SharpVendas\obj\Debug\SharpVendas.funcionariosRelFrm.resources

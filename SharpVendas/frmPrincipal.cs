@@ -64,5 +64,10 @@ namespace SharpVendas
         {
             new frmVendasRel().ShowDialog();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            new frmOpcRel().ShowDialog();
+        }
     }
 }

@@ -112,6 +112,7 @@
             this.button6.Size = new System.Drawing.Size(282, 237);
             this.button6.TabIndex = 8;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -156,9 +157,10 @@
             this.Controls.Add(this.button2);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "SharpVendas";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
